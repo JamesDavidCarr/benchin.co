@@ -1,0 +1,6 @@
+---
+
+- include_vars: main.yml
+
+- name: 'Create/activate virtualenv and install dependencies'
+  pip: requirements='{{ web_dir }}/requirements.txt' virtualenv='{{ web_venv }}'

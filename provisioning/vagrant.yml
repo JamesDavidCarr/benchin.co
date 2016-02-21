@@ -6,3 +6,6 @@
   sudo_user: root
   roles:
      - common
+     - web
+  vars_files:
+    - vars/common.yml
