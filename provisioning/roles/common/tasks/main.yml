@@ -27,3 +27,4 @@
 
 - name: 'Clone/update web repo'
   git: repo='{{ web_repo }}' dest='{{ web_dir }}'
+  when: not development

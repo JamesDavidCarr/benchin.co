@@ -7,6 +7,8 @@
   roles:
      - common
      - web
+     - geerlingguy.java
+     - jenkins
   vars_files:
     - vars/common.yml
     - vars/vagrant.yml

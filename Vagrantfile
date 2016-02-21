@@ -46,6 +46,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "provisioning/vagrant.yml"
+  #  ansible.raw_arguments = ['-vvvv']
   end
 
 end
