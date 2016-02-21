@@ -11,4 +11,8 @@
      - python-virtualenv
      - python2.7
      - python2.7-dev
+     - supervisor
      - vim
+
+- name: 'Start supervisor service'
+  service: name=supervisor state=started

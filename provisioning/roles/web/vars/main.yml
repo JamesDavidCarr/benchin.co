@@ -1,3 +1,9 @@
 ---
 
 web_venv: '{{ web_dir }}/.env'
+web_activate_file: '{{ web_venv }}/bin/activate'
+web_src_dir: '{{ web_dir }}/src'
+src_dir: '/src'
+web_log_dir: '{{ web_dir }}/logs'
+supervisor_config: '/etc/supervisor/conf.d/web.conf'
+python_runner: '{{ src_dir }}/python_runner.sh'

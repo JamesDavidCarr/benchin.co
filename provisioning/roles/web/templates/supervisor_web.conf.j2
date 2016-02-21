@@ -1,0 +1,15 @@
+[program:web]
+command={{ python_runner }} {{ web_src_dir }}/run.py
+directory={{ web_src_dir }}
+autostart=true
+autorestart=true
+stdout_logfile={{ web_log_dir }}/web_out.log
+redirect_stderr=true
+user=web
+stopsignal=QUIT
+stopasgroup=true
+
+
+[supervisord]
+
+[supervisorctl]
