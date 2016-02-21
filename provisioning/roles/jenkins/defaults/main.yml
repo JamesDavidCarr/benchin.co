@@ -7,6 +7,8 @@ jenkins_jar_location: /opt/jenkins-cli.jar
 jenkins_plugins:
   - git
   - github
+  - embeddable-build-status
+  - shiningpanda
   - sonar
   - ssh
 jenkins_url_prefix: ""

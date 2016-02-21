@@ -1,12 +1,14 @@
 ---
 
-- hosts: dev
-  user: vagrant
+- hosts: staging
+  user: root
   sudo: yes
   sudo_user: root
   roles:
      - common
      - web
+     - geerlingguy.java
+     - jenkins
   vars_files:
     - vars/common.yml
-    - vars/vagrant.yml
+    - vars/production.yml
