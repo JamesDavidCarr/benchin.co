@@ -2,4 +2,4 @@
 
 ### SoftEng Continuous Integration
 
-Important info here
+Important info here.
