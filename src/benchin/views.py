@@ -1,4 +1,4 @@
-from devfun import app
+from benchin import app
 
 @app.route('/')
 def hello():
