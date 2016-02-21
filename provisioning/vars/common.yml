@@ -1,3 +1,4 @@
 ---
 
-web_dir: "/benchin"
+web_dir: '/benchin'
+web_repo: 'git@github.com:JamesDavidCarr/benchin.co.git'
