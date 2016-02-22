@@ -1,7 +1,7 @@
-default ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222
-staging1 ansible_ssh_host=178.62.29.184 ansible_ssh_user=root
-prod1 ansible_ssh_host=188.166.144.149 ansible_ssh_user=root
-prod2 ansible_ssh_host=188.166.149.234 ansible_ssh_user=root
+default  ansible_ssh_host=127.0.0.1       ansible_ssh_port=2222
+staging1 ansible_ssh_host=178.62.29.184   ansible_ssh_user=root ansible_ssh_private_key_file=~/.ssh/digital_ocean
+prod1    ansible_ssh_host=188.166.144.149 ansible_ssh_user=root ansible_ssh_private_key_file=~/.ssh/digital_ocean
+prod2    ansible_ssh_host=188.166.149.234 ansible_ssh_user=root ansible_ssh_private_key_file=~/.ssh/digital_ocean
 
 [dev]
 default
