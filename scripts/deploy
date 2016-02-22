@@ -4,7 +4,7 @@ sha=$1 || $(git rev-parse HEAD)
 
 if [ -z "$sha" ]
 then
-  sha=$(git rev-parse HEAD)
+  sha=$(curl https://api.github.com/repos/Chatterly/benchin.co/commits\?per_page\=1 | jq '.[0] | .sha')
 fi
 
 ansible-playbook ../provisioning/deploy.yml -i ../provisioning/hosts --extra-vars "deploy_sha=$sha"
