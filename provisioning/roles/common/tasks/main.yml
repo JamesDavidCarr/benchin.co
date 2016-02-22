@@ -26,5 +26,5 @@
     regexp: '^github\\.com'
 
 - name: 'Clone/update web repo'
-  git: repo='{{ web_repo }}' dest='{{ web_dir }}'
+  git: repo='{{ web_repo }}' dest='{{ web_dir }}' version='{{ deploy_sha }}'
   when: not development

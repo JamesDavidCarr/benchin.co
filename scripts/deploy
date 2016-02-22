@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sha=$1 || $(git rev-parse HEAD)
+
+if [ -z "$sha" ]
+then
+  sha=$(git rev-parse HEAD)
+fi
+
+ansible-playbook ../provisioning/deploy.yml -i ../provisioning/hosts --extra-vars "deploy_sha=$sha"
