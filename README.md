@@ -2,6 +2,8 @@
 
 ### SoftEng Continuous Integration
 
-Important info here.
+**Staging:** [[178.62.29.184:8080](http://178.62.29.184:8080)]
 
-This is a great repo
+**Prod1:** [[188.166.144.149](http://188.166.144.149)]
+
+**Prod2:** [[188.166.149.234](http://188.166.149.234)]
