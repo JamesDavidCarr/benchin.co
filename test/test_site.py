@@ -23,6 +23,9 @@ class BenChinTestCase(unittest.TestCase):
         resp = self.app.get('/404/notfound')
         self.assertTrue(status.is_client_error(resp.status_code))
 
+    def test_fails(self):
+        self.assertTrue(false)
+
 
 if __name__ == "__main__":
     unittest.main()
