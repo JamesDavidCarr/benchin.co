@@ -2,11 +2,11 @@
 
 - include_vars: main.yml
 
-- name: 'Create/activate virtualenv and install dependencies'
-  pip: requirements='{{ web_dir }}/requirements.txt' virtualenv='{{ web_venv }}'
-
 - name: 'Create the web user'
   user: name=web shell=/bin/bash
+
+- name: 'Create/activate virtualenv and install dependencies'
+  pip: requirements='{{ web_dir }}/requirements.txt' virtualenv='{{ web_venv }}'
 
 - name: 'Create logging directory'
   file: path='{{ web_log_dir }}' owner=web group=web state=directory
