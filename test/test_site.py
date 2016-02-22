@@ -13,8 +13,14 @@ class BenChinTestCase(unittest.TestCase):
         self.assertTrue("Hello, world!" in resp.data)
         self.assertTrue(status.is_success(resp.status_code))
 
+    def test_hello_name(self):
+        name = "James"
+        resp = self.app.get('/{}'.format(name))
+        self.assertTrue("Hello, James" in resp.data)
+        self.assertTrue(status.is_success(resp.status_code))
+
     def test_404(self):
-        resp = self.app.get('/404')
+        resp = self.app.get('/404/notfound')
         self.assertTrue(status.is_client_error(resp.status_code))
 
 
