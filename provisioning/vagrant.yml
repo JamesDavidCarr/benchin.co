@@ -5,7 +5,9 @@
   sudo: yes
   sudo_user: root
   roles:
+     - angstwad.docker_ubuntu
      - common
+     - infer
      - web
   vars_files:
     - vars/common.yml

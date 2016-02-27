@@ -1,0 +1,7 @@
+---
+
+- name: 'Install infer docker image'
+  docker: name=infer image=doctorq/infer:v1.1 state=present
+
+- name: 'Install nokogiri'
+  gem: name=nokogiri state=present

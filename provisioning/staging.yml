@@ -5,7 +5,11 @@
   sudo: yes
   sudo_user: root
   roles:
+     - angstwad.docker_ubuntu
+     - common
      - geerlingguy.java
+     - geerlingguy.ruby
+     - infer
      - jenkins
   vars_files:
     - vars/common.yml
