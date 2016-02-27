@@ -6,9 +6,10 @@ jenkins_http_port: 8080
 jenkins_jar_location: /opt/jenkins-cli.jar
 jenkins_plugins:
   - chucknorris
+  - embeddable-build-status
   - git
   - github
-  - embeddable-build-status
+  - junit
   - shiningpanda
   - sonar
   - ssh
