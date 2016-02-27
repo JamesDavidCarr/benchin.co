@@ -5,3 +5,5 @@
 
 - name: 'Install nokogiri'
   gem: name=nokogiri state=present
+  become: yes
+  become_user: jenkins
