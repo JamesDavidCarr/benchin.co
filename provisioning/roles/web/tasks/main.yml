@@ -2,6 +2,13 @@
 
 - include_vars: main.yml
 
+- name: 'Start supervisor service'
+  service: name=supervisor state=started
+
+- name: 'Clone/update web repo'
+  git: repo='{{ web_repo }}' dest='{{ web_dir }}' version='{{ deploy_sha }}'
+  when: not development
+
 - name: 'Create the web user'
   user: name=web shell=/bin/bash
 
