@@ -1,4 +1,4 @@
-[![Build Status](http://178.62.29.184:8080/buildStatus/icon?job=Chatley Coursework)](http://178.62.29.184:8080/job/Chatley Coursework)
+[![Build Status](http://178.62.29.184:8080/buildStatus/icon?job=Chatley)](http://178.62.29.184:8080/job/Chatley/)
 
 ### SoftEng Continuous Integration
 
