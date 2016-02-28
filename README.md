@@ -2,7 +2,7 @@
 
 ### SoftEng Continuous Integration
 
-## Now uses infer to analyse java codebases too
+## Now uses infer to analyse java codebases too!
 
 **Staging:** [[178.62.29.184:8080](http://178.62.29.184:8080)]
 
