@@ -9,6 +9,7 @@ jenkins_plugins:
   - embeddable-build-status
   - git
   - github
+  - greenballs
   - junit
   - shiningpanda
   - sonar
