@@ -9,6 +9,9 @@
 - name: 'Install infer docker image'
   docker: name=infer image=doctorq/infer:v1.1 state=present
 
+- name: 'Restart docker service'
+  service: name=docker state=restarted
+
 - name: 'Install nokogiri'
   gem: name=nokogiri state=present
   become: yes
