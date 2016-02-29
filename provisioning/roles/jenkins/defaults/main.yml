@@ -10,6 +10,7 @@ jenkins_plugins:
   - git
   - github
   - greenballs
+  - jenkins-multijob-plugin
   - junit
   - shiningpanda
   - sonar
